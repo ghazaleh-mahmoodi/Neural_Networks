@@ -1,1 +1,13 @@
-# Preceptron-Implementation-without-framework
+# Neural Networks Learning
+
+1.	MLP with Numpy: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MLP(Numpy_vs_Keras)_and_MNIST(keras_Remove_Noise).pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MLP_with_Numpy.ipynb)
+2.	MLP with Keras: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MLP(Numpy_vs_Keras)_and_MNIST(keras_Remove_Noise).pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MLP_with_Keras.ipynb)
+3.	Kohonen’s Self-Organizing Feature Map: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/RBF_vs_MLP_and_Kohonen_Report.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Kohonen_(KSOFM).ipynb)
+4.	Image detection - Hopfield: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/Genetic_Algorithm_Report.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Hopfield.ipynb)
+5.	Function approximation - RBF vs. MLP: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/RBF_vs_MLP_and_Kohonen_Report.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/RBF_VS_MLP.ipynb)
+6.	Roots of Polynominal (Genetic Algorithm): [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/Genetic_Algorithm_Report.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Genetic_Algorithm_Roots_of_Polynominal.ipynb)
+7.	Traveling Salesman (Genetic Algorithm): [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/Genetic_Algorithm_Report.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Genetic_Algorithm_Traveling_Salesman.ipynb)
+8.	MNIST Dense: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MLP(Numpy_vs_Keras)_and_MNIST(keras_Remove_Noise).pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MNIST_Dence_Keras.ipynb)
+9.	MNIST Dense Remove Noise: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MLP(Numpy_vs_Keras)_and_MNIST(keras_Remove_Noise).pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MNIST_Dence_Remove_Noise.ipynb)
+10.	MNIST CNN: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MNIST_CNN.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MNIST_CNN.ipynb)
+11.	MNIST CNN Remove Noise: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MNIST_CNN.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MNIST_CNN_Remove_Noise.ipynb)
