@@ -1,0 +1,67 @@
+FUNCTION_BLOCK Inverted_Pendulum
+
+    VAR_INPUT
+        theta : REAL;
+        theta_dot : REAL;
+    END_VAR
+
+    VAR_OUTPUT
+        F : REAL;
+    END_VAR
+
+    FUZZIFY theta
+    
+        TERM down_right := (0,1) (20,0);
+        TERM up_right   :=  (150,0) (165,1) (180,0);
+        TERM up_little_right :=  (170,0) (180,1);
+        TERM up_little_left  :=  (180,1) (190,0);
+        TERM up_left   := (180,0) (195,1) (210,0);
+        TERM down_left := (340,0) (360,1);
+    
+    END_FUZZIFY
+
+    FUZZIFY theta_dot
+    
+        TERM clkwise_fast := (-60,0) (-40,1) (-20,0);
+        TERM clkwise      := (-20,0) (-15,1) (-2,0);
+        TERM counter_clkwise      := (2,0) (15,1) (20,0);
+        TERM counter_clkwise_fast := (20,0) (40,1) (60,0);
+        
+    END_FUZZIFY
+    
+    DEFUZZIFY F
+       
+        TERM fast_left  := (-300,0) (-200,1) (-100,0);
+        TERM stop       := (-10,0) (0,1) (10,0);
+        TERM fast_right := (100,0) (200,1) (300,0);
+        
+        ACCU : MAX; 
+        METHOD : COG;
+        DEFAULT := 0;
+    END_DEFUZZIFY
+
+    RULEBLOCK Inverted_Pendulum
+        AND : MIN;
+        OR : MAX;
+        
+        RULE 1 :
+         IF (theta IS up_left OR theta IS down_right) THEN F IS fast_left;
+        
+        RULE 2 :
+         IF (theta IS up_right OR theta IS down_left) THEN F IS fast_right;
+        
+        RULE 3 :
+         IF theta IS up_little_right AND theta_dot IS clkwise THEN F IS fast_right;
+        
+        RULE 4 :
+         IF theta IS up_little_left AND theta_dot IS counter_clkwise THEN F IS fast_left;
+        
+        RULE 5 :
+         IF theta_dot IS clkwise_fast AND (theta IS up_right OR theta IS up_little_right) THEN F IS fast_right;
+        
+        RULE 6 :
+         IF theta_dot IS counter_clkwise_fast AND (theta IS up_left OR theta IS up_little_left) THEN F IS fast_left;
+    
+    END_RULEBLOCK
+
+END_FUNCTION_BLOCK
