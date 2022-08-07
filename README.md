@@ -13,3 +13,4 @@
 11.	MNIST Dense Remove Noise: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MLP(Numpy_vs_Keras)_and_MNIST(keras_Remove_Noise).pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MNIST_Dence_Remove_Noise.ipynb)
 12.	MNIST CNN: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MNIST_CNN.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MNIST_CNN.ipynb)
 13.	MNIST CNN Remove Noise: [Report](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Reports/MNIST_CNN.pdf) - [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/MNIST_CNN_Remove_Noise.ipynb)
+14.	Adaboost VS. Fully Connected Nueral Network: [implementation](https://github.com/ghazaleh-mahmoodi/Neural_Networks/blob/master/Adaboost_Fully_Connected.ipynb)
